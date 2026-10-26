@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <div style="background-color:red;width:200px;height:200px;">
+        
+    </div>
+    
+    <br />
+    <input type="button" value="hide" id="btn1" />
+    <input type="button" value="show" id="btn2" />
+    <input type="button" value="toogle" id="btn3" />
+    <input type="button" value="toogle" id="btn4" />
+    <script type="text/javascript" src="~/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn4").click(function(){
+            
+                for(var i=0;i<5;i++)
+                {
+             $("div").animate({"width":"400px","height":"500px"});
+             $("div").animate({"width":"100px","height":"100px"});
+             $("div").animate({"width":"300px","height":"300px"});
+
+                }
+            
+            });
+
+            function SayHello()
+            {
+                alert("Say Hello!");
+            }
+
+            $("#btn1").click(function(){
+              // $("div").hide(2000,SayHello);
+               //$("div").fadeOut(2000);
+               $("div").slideUp(2000);
+            });
+
+            $("#btn2").click(function(){
+              //$("div").fadeIn(2000);              
+              $("div").slideDown(2000);
+            });
+            $("#btn3").click(function(){
+              //$("div").fadeToggle(2000);
+              $("div").slideToggle(2000);
+            });
+        });
+    </script>
+</body>
+</html>

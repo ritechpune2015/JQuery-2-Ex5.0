@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <input type="button" value="click" id="btn" />
+    <div>
+        Hello this is div used to demo. <br />
+        Hello this is div used to demo. <br />
+        Hello this is div used to demo. <br />
+    </div>
+
+    <script type="text/javascript" src="~/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          
+            $("#btn").click(function(){
+           
+                alert("Button Clicked!");
+            });
+
+            $("div").mouseenter(function(){
+                $(this).css("background-color","yellow");
+            });
+
+            $("div").mouseleave(function(){
+                $(this).css("background-color","orange");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <div>
+        this is div tag contains <b> bold tag </b>
+        and <i> italic tag</i>
+    </div>
+    Enter Name:<input type="text" id="nm" /> <br />
+    <input type="button" value="Read" id="btn1" />
+    <input type="button" value="Write" id="btn2" />
+    <script type="text/javascript" src="~/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn1").click(function(){
+               // var v=$("div").text(); // read
+               //var v =$("div").html(); //read
+               var v = $("#nm").val(); //will read value 
+                alert(v);
+            });
+            $("#btn2").click(function(){
+              //$("div").text("welcome to div tag used to demo!");
+              //$("div").html("<font color='red' size='40'> this is font </font>")
+              $("#nm").val("Demo content used!");
+            });
+        });
+    </script>
+</body>
+</html>

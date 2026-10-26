@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+</head>
+<body>
+    <h1> First Heading</h1>
+    <p>
+        Content of first heading  used to demo
+    </p>
+    <h1> Second Heading </h1>
+    <p id="p">
+        Content of Second heading used to demo
+        <b> this is <i> this is italic </i> bold </b>
+    </p>
+    <h1> Third Heading </h1>
+    <p>
+        Content of Third heading used to demo
+    </p>
+    <h1> Fourth Heading </h1>
+    <p>
+        Content of Fourth heading used to demo
+    </p>
+    <h1> Fifth Heading </h1>
+    <p>
+        Content of fith heading used to demo
+    </p>
+    <script type="text/javascript" src="~/jquery/jquery.js"></script>
+    <script type="text/javascript">
+     $(function(){
+         //alert("JQuery!");
+        // $("h1").first().css("background-color","orange");
+         //   $("h1").last().css("background-color","orange");
+         //$("#p").next().css("background-color","blue");
+         // $("#p").nextAll().css("background-color","yellow");
+        // $("#p").prev().css("background-color","skyblue");
+         //$("#p").prevAll().css("background-color","skyblue");
+        // $("i").parent().css("background-color","skyblue");
+        // $("b").children().css("background-color","orange");
+ 
+          $("h1").eq(3).css("background-color","teal");
+
+     });
+    </script>
+</body>
+</html>

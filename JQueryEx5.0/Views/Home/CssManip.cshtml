@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .box{
+            background-color:yellow;
+            color:red;
+            font-size:40px;
+        }
+
+        .bluebox {
+            background-color: blue;
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is div tag contains <b> bold tag </b>
+        and <i> italic tag</i>
+    </div>
+    
+    <input type="button" value="Apply CSS" id="btn1" />
+    <input type="button" value="Add CSS" id="btn2" />
+    <input type="button" value="Remove CSS" id="btn3" />
+    <input type="button" value="Toggle CSS" id="btn4" />
+
+    <script type="text/javascript" src="~/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn1").click(function(){
+              //$("div").css("color","blue");
+              $("div").css({"color":"red","background-color":"yellow","border":"2px solid green"});
+
+            });
+            $("#btn2").click(function(){
+              $("div").addClass("box");
+            });
+            $("#btn3").click(function(){
+              $("div").removeClass("box").addClass("bluebox");
+            });
+            $("#btn4").click(function(){
+              $("div").toggleClass("box");
+            });
+        });
+    </script>
+</body>
+</html>
